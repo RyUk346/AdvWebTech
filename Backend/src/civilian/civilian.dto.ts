@@ -18,7 +18,7 @@ export class civilianRegDTO {
     @IsNotEmpty({message: "E-mail Must be Filled!"})
     email:string;
 
-    @IsInt({message: "Invalid Contact!"})
+    //@IsInt({message: "Invalid Contact!"})
     contact:number;
 
     @IsString({message: "Invalid Password!"})
@@ -53,7 +53,7 @@ export class civilianUpdateDTO {
     @IsEmail({}, {message: "Invalid E-mail!"})
     email:string;
 
-    @IsInt({message: "Invalid Contact!"})
+    
     contact:number;
 
     @IsString({message: "Invalid Password!"})
@@ -74,4 +74,16 @@ export class civilianInfoDTO {
 
     @IsInt({message: "Invalid Contact!"})
     contact:number;
+}
+export class CivilianMessageDTO {
+    @IsString({message: "Invalid Receiver!"})
+    @IsNotEmpty({message: "Receiver Must be Filled!"})
+    receiver:string;
+
+    @IsString({message: "Invalid Subject!"})
+    @IsNotEmpty({message: "Subject Must be Filled!"})
+    subject:string;
+
+    @IsString({message: "Invalid Message!"})
+    message:string;
 }

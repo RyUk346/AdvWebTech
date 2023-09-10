@@ -69,10 +69,8 @@ export class civilianProfileEntity {
 
     @Column()
     username:string;
-
     @Column()
     email:string;
-
     @Column()
     contact:number;
 }

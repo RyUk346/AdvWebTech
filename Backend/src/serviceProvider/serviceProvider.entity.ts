@@ -14,7 +14,7 @@ export class serviceProviderEntity {
     @Column()
     contact:number;
     @Column()
-    gender:string;
+    age:number;
     @Column()
     service:string;
     @Column({nullable:true})

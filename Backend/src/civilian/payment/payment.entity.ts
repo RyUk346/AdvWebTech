@@ -1,7 +1,7 @@
 import { Entity, PrimaryGeneratedColumn, Column, ManyToOne, OneToOne, JoinColumn } from "typeorm";
 
-import { civilianEntity } from "src/civilian/civilian.entity";
-import { Civilian } from "src/civilian/civilian.service";
+
+
 
 
 
@@ -24,12 +24,6 @@ export class paymentEntity {
 
 
 
-  @Column()
-
-  payment: string;
-  @OneToOne(() => civilianEntity, civilian => civilian.payment)
-
-  civilian: civilianEntity;
 
 
 

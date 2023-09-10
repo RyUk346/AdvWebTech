@@ -13,7 +13,7 @@ export class serviceEntity {
     @Column()
     location:string;
     @Column()
-    password:string;
+    details:string;
 
     @ManyToMany(() => civilianEntity, civilian => civilian.services)
     civilians: civilianEntity[];

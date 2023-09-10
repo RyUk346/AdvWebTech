@@ -18,8 +18,8 @@ export class serviceProviderRegDTO {
     @IsInt({message: "Invalid Contact!"})
     contact:number;
 
-    @IsString({message: "Invalid Gender!"})
-    gender:string;
+    @IsInt({message: "Invalid Age!"})
+    age:number;
 
     @IsString({message: "Invalid service!"})
     service:string;
